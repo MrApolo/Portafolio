@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: #040303;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color:#ffffff;
+    font-size: 1.5rem;
+}
+
+.bar{
+    color: #ffffff;
+    display: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ul{
+    display: flex;
+    margin: 0;
+}
+
+.li{
+    list-style: none;
+    margin: 0 1rem 0 0;
+}
+
+.link{
+    text-decoration: none;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.link:hover{
+    border-bottom: #B3541E 1px solid;
+    transition: 0.3s;
+}
+
+.main{
+    width: 100%;
+}
+
+.projects{
+    background: #461111;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 200px;
+    height: auto;
+    background:#040303;
+    margin: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.img{
+    width: 100%;
+    height: auto    ;
+}
+
+.skills{
+    background: #A13333;
+    height: 100vh;
+}
+
+.contact{
+    background: #B3541E;
+    height: 100vh;
+}
+
+.footer{
+    background: #040303;
+    height: 200px;
+}
+
+@media (max-width: 600px) {
+    .bar{
+        color: #ffffff;
+        display: block;
+        margin: 0 1rem 0 0;
+        background: none;
+        border: none;
+    }
+
+    .bar:hover{
+        cursor: pointer;
+    }
+
+    .bar span{
+        font-size: 3rem;
+    }
+
+    .logo{
+        font-size: 2.5rem;
+        text-align: justify;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .projects{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card{
+       width: 80%;
+    }
+}
