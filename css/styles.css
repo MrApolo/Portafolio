@@ -208,10 +208,22 @@ h2{
 
 .footer{
     border: #ffffff 1px solid;
-    height: 100px;
+    height: auto;
     max-width: 1080px;
     margin: auto;
     padding: 1rem;
+}
+
+.items{
+    width: 100%;
+}
+
+.items p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 768px) {
